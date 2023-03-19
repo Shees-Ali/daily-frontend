@@ -1,0 +1,20 @@
+.main-section {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.top-heading {
+  font-size: 80px;
+}
+
+.right {
+  .side-heading {
+    font-size: 60px;
+  }
+
+  .side-sub {
+    font-size: 24px;
+  }
+}

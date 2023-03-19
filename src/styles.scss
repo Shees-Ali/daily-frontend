@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+@import "app/theme/fonts.scss";
+
+.blue-gradient-1 {
+  background: linear-gradient(
+    171.48deg,
+    #117fb7 6.51%,
+    rgba(36, 0, 255, 0) 110.64%
+  );
+  filter: blur(125px);
+}
+
+.pink-gradient-1 {
+  background: linear-gradient(
+    181.21deg,
+    #ff7efa 1.03%,
+    rgba(255, 0, 184, 0.4) 86.22%
+  );
+  filter: blur(125px);
+  transform: rotate(-74.62deg);
+}
