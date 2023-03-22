@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './hero-section.component.html',
   styleUrls: ['./hero-section.component.scss'],
 })
-export class HeroSectionComponent {}
+export class HeroSectionComponent {
+  email: string = '';
+  name: string = '';
+
+  getStarted() {}
+}

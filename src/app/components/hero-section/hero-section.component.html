@@ -1,16 +1,41 @@
-<div class="container">
-  <div class="main-section">
-    <div class="row">
-      <div class="col-6">
-        <p class="top-heading montserrat semi-bold">Daily Front End</p>
-      </div>
-      <div class="col-6 right">
-        <p class="montserrat side-heading light">Become a better Developer</p>
-        <p class="montserrat side-sub">
-          A 50 day series of challenges , inspirations and free resources to
-          make you job ready as a Front-End Developer !
-        </p>
-      </div>
+<div class="main-section">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <p class="top-heading montserrat semi-bold">Daily Front End</p>
+    </div>
+    <div class="col-12 col-sm-6 right">
+      <p class="montserrat side-heading light">Become a better Developer</p>
+      <p class="montserrat side-sub">
+        A 50 day series of challenges , inspirations and free resources to make
+        you job ready as a Front-End Developer !
+      </p>
+    </div>
+  </div>
+
+  <div class="row info-box">
+    <div class="input-box col-12 col-sm-3">
+      <input
+        [(ngModel)]="email"
+        type="email"
+        class="form-control"
+        placeholder="Name"
+      />
+    </div>
+    <div class="input-box col-12 col-sm-6">
+      <input
+        [(ngModel)]="name"
+        type="name"
+        class="form-control"
+        placeholder="Email"
+      />
+    </div>
+    <div class="col-12 col-sm-3">
+      <button
+        (click)="getStarted()"
+        class="get-started btn btn-primary montserrat"
+      >
+        Get Started
+      </button>
     </div>
   </div>
 </div>
