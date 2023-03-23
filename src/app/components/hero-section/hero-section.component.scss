@@ -31,17 +31,6 @@
   margin-top: 150px;
   width: 100%;
 
-  .input-box {
-    height: 80px;
-
-    input {
-      font-size: 35px;
-      border: 3px solid #0055d3;
-      height: 100%;
-      font-size: 35px;
-    }
-  }
-
   .get-started {
     height: 80px;
     width: 270px;
@@ -54,3 +43,44 @@
   color: #0055d3;
   opacity: 1;
 }
+
+.inputGroup {
+  height: 80px;
+  margin: 0 0 1em 0;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 35px;
+  border: 3px solid #0055d3;
+  height: 100%;
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  background-color: transparent;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 35px;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #0055d3;
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+// .inputGroup :is(input:focus, input:valid) {
+//   border-color: rgb(150, 150, 200);
+// }
