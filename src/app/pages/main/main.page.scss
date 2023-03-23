@@ -1,0 +1,51 @@
+.bg-animation-blue {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  bottom: 0%;
+  width: 60%;
+  background: linear-gradient(#117fb7 6.51%, rgba(36, 0, 255, 0) 110.64%);
+  height: 100%;
+  filter: blur(125px);
+  z-index: -1;
+}
+
+.bg-animation-pink {
+  position: absolute;
+  left: 55%;
+  top: 0%;
+  bottom: -37.37%;
+  width: 470px;
+  height: 100%;
+  background: linear-gradient(#ff7efa 1.03%, rgba(255, 0, 184, 0.4) 86.22%);
+  filter: blur(125px);
+  transform: matrix(0.35, -0.94, 0.98, 0.2, 0, 0);
+  z-index: -1;
+}
+
+.bg-animation-blue {
+  animation: bg-animation-blue 8s linear infinite normal both;
+}
+
+.bg-animation-pink {
+  animation: bg-animation-pink 8s linear infinite normal both;
+}
+
+
+@keyframes bg-animation-blue {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bg-animation-pink {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
