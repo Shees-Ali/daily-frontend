@@ -1,0 +1,18 @@
+.navbar{
+  background-color: #0055d3;
+  margin-top: 12vh;
+  // padding: 3vh 3vh;
+  
+  .navbar-brand{
+    color: white;
+    font-size: 2.5rem;
+    padding-left: 4vw;
+  }  
+  .navbar-nav{
+    .nav-item, .nav-link{
+      color: white;
+      font-size: 1.6rem;
+      padding: 0 0.5vw;
+    }  
+  }
+}
