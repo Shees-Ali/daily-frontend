@@ -1,1 +1,27 @@
-<p>upper-footer-section works!</p>
+<div class="d-flex justify-content-center">
+  <button
+  (click)="getFeatured()"
+  class="get-featured btn btn-primary montserrat"
+  >
+    Get Featured
+  </button>
+</div>
+<div class="row info-box">
+  <div class="inputGroup col-12 col-sm-3">
+    <input type="text" required="" autocomplete="off" />
+    <label for="name">Name</label>
+  </div>
+
+  <div class="inputGroup col-12 col-sm-6">
+    <input type="text" required="" autocomplete="off" />
+    <label for="name">Email</label>
+  </div>
+  <div class="col-12 col-sm-3">
+    <button
+      (click)="getStarted()"
+      class="get-started btn btn-primary montserrat"
+    >
+      Get Started
+    </button>
+  </div>
+</div>
