@@ -5,6 +5,7 @@ import { InfoSectionComponent } from './info-section/info-section.component';
 import { FormsModule } from '@angular/forms';
 import { ReferralsSectionComponent } from './referrals-section/referrals-section.component';
 import { ReferralCardComponent } from './referral-card/referral-card.component';
+import { UpperFooterSectionComponent } from './upper-footer-section/upper-footer-section.component';
 
 @NgModule({
   declarations: [
@@ -12,12 +13,14 @@ import { ReferralCardComponent } from './referral-card/referral-card.component';
     InfoSectionComponent,
     ReferralsSectionComponent,
     ReferralCardComponent,
+    UpperFooterSectionComponent
   ],
   imports: [CommonModule, FormsModule],
   exports: [
     HeroSectionComponent,
     InfoSectionComponent,
     ReferralsSectionComponent,
+    UpperFooterSectionComponent
   ],
 })
 export class ComponentsModule {}
