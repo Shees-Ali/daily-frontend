@@ -11,6 +11,17 @@ const routes: Routes = [
     path: 'main',
     loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then((m) => m.BlogModule),
+  },
+  {
+    path: 'get-featured',
+    loadChildren: () =>
+      import('./get-featured/get-featured.module').then(
+        (m) => m.GetFeaturedModule
+      ),
+  },
 ];
 
 @NgModule({
