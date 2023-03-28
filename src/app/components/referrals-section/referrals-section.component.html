@@ -1,8 +1,10 @@
-<div class="referrals">
+<div class="referrals animate" [class.animate-active]="isVisible" >
   <div class="bg-circle-blue"></div>
 
 <!-- <div class="container mt-5 mb-5"> -->
-  <div class="swiper">
+  <div class="swiper"
+       (swiper)="onSwiper()"
+       (slideChange)="onSlideChange()">
     <div class="swiper-wrapper">
       <!-- <div class="swiper-slide"> -->
         <referral-card></referral-card>

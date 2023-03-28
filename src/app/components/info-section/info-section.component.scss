@@ -2,6 +2,16 @@
   margin-top: 220px;
 }
 
+.info{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out
+}
+.info-active{
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .heading {
   font-size: 60px;
   color: #0055d3;
@@ -30,3 +40,4 @@
     color: #000000;
   }
 }
+

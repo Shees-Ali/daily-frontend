@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef  } from '@angular/core';
 
 @Component({
   selector: 'info-section',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-section.component.scss']
 })
 export class InfoSectionComponent {
+  isVisible = false;
 
+  constructor(private elementRef: ElementRef) {}
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    const element = this.elementRef.nativeElement.querySelector('.info');
+    const elementPosition = element.getBoundingClientRect().top + element.clientHeight;
+    const scrollPosition = window.innerHeight + window.pageYOffset;
+
+    if (elementPosition <= scrollPosition) {
+      this.isVisible = true;
+    }
+  }
 }

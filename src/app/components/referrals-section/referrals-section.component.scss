@@ -1,6 +1,16 @@
 .referrals {
   margin-top: 200px;
 }
+.animate{
+  opacity: 0;
+  transform: translateY(60%);
+  transition: all 1.5s ease-in-out
+}
+.animate-active{
+  opacity: 1;
+  transform: translateY(0);
+} 
+
 .bg-circle-blue {
   position: absolute;
   z-index: -1;
