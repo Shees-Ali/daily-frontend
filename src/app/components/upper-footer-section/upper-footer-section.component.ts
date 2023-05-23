@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'upper-footer-section',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class UpperFooterSectionComponent {
 
-  getFeatured() {}
+  getFeatured(){
+  }
   getStarted() {}
 }

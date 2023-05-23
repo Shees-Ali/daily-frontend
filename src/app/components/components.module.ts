@@ -7,6 +7,9 @@ import { ReferralsSectionComponent } from './referrals-section/referrals-section
 import { ReferralCardComponent } from './referral-card/referral-card.component';
 import { UpperFooterSectionComponent } from './upper-footer-section/upper-footer-section.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { DescriptionSectionComponent } from './description-section/description-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
+import { GetfeaturedFormComponent } from './getfeatured-form/getfeatured-form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     ReferralsSectionComponent,
     ReferralCardComponent,
     UpperFooterSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    DescriptionSectionComponent,
+    AboutSectionComponent,
+    GetfeaturedFormComponent
   ],
   imports: [CommonModule, FormsModule],
   exports: [
@@ -23,7 +29,10 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     InfoSectionComponent,
     ReferralsSectionComponent,
     UpperFooterSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    DescriptionSectionComponent,
+    AboutSectionComponent,
+    GetfeaturedFormComponent
   ],
 })
 export class ComponentsModule {}
