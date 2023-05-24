@@ -1,6 +1,13 @@
+.flex-container {
+  display: flex;
+  justify-content: end;
+}
+
 .content{
   height: 70vh;
-  width: 100%;
+  width: 70%;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
   // background-color: #0055d3;
   background-color: #f6f6f6;
   box-shadow: 20px 25px 75px rgba(#0055d3, 0.45);
@@ -14,9 +21,10 @@
       width: 90%;
     }
     .text{
+      margin: 24px;
       text-align: justify;
       color: #0055d3 ;
-      font-size: 19px;
+      font-size: 18px;
     }
   }
 }
