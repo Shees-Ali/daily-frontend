@@ -22,12 +22,12 @@
 }
 
 .info-box {
-  margin-top: 14vh;
+  margin-top: 80px;
   width: 100%;
   align-items: baseline;
 
   .get-started {
-    font-size: 2rem;
+    font-size: 24px;
     padding: 12px 8px;
     font-weight: 700;
   }
@@ -91,8 +91,78 @@
   height: 8vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
+  .top-heading {
+    font-size: 62px;
+  }
+  .right {
+    .side-heading {
+      font-size: 54px;
+      line-height: 70px
+    }
+    .side-sub {
+      font-size: 16px;
+    }
+  }
+  .info-box {
+    .get-started {
+      font-size: 20px;
+    }
+  }
   .main-section {
-    margin-top: 16px;
+    margin-top: 80px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .top-heading {
+    font-size: 54px;
+    margin-bottom: 0;
+  }
+  .right {
+    .side-heading {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .side-sub {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+  .info-box {
+    margin-top: 26px; 
+    .get-started {
+      width: 100%;
+      font-size: 16px;
+      justify-self: center;
+      margin-top: 32px;
+    }
+  }
+  .main-section {
+    margin-top: 70px;
+  }
+  .inputbox{
+    margin: 22px 0;
+  }
+  .inputbox input {
+    padding: 12px;
+    font-size: 18px;
+  }
+  
+  .inputbox span {
+    padding: 10px 10px 10px;
+    font-size: 22px;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    transform: translateX(-10px) translateY(-45px);
+    font-size: 20px;
+  }
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 48px;
+  }
+}
+
+
