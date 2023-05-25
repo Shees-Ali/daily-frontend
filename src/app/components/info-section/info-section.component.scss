@@ -30,7 +30,6 @@
   margin-top: 170px;
   .hashtag {
     font-size: 64px;
-    line-height: 78px;
     color: #0055d3;
   }
 
@@ -87,4 +86,10 @@
 
 .m-inline-24 {
   margin-inline: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hashtag-box > .hashtag-sub{
+    width: 100%;
+  }
 }

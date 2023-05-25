@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Injector } from '@angular/core';
+import { BasePage } from 'src/app/base/base.page';
 
 
 @Component({
@@ -7,9 +7,14 @@ import { Router } from '@angular/router';
   templateUrl: './upper-footer-section.component.html',
   styleUrls: ['./upper-footer-section.component.scss']
 })
-export class UpperFooterSectionComponent {
+export class UpperFooterSectionComponent extends BasePage{
+
+  constructor(injector: Injector) {
+    super(injector);
+  }
 
   getFeatured(){
+      this.nav.navigateTo('/get-featured');
   }
   getStarted() {}
 }

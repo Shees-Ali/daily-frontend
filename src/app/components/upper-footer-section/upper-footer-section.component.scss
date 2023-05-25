@@ -1,9 +1,8 @@
 @import "../hero-section/hero-section.component.scss";
 
 .get-featured {
-  height: 80px;
-  width: 270px;
-  font-size: 35px;
+  padding: 16px 18px;
+  font-size: 28px;
   font-weight: 700;
 }
 h2 {
@@ -21,4 +20,13 @@ h2 {
   transform: translate(-40%, 10%);
   background: linear-gradient(#ff7efa 130%, rgba(36, 0, 255, 0) 76.36%);
   filter: blur(125px);
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .get-featured {
+    font-size: 20px;
+  }
 }
