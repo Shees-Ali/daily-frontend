@@ -21,7 +21,6 @@
 .sub-heading {
   font-size: 24px;
   color: #000000;
-  line-height: 36px;
   margin-top: 0px;
   margin: 16px;
 }
@@ -72,14 +71,12 @@
     height: 100%;
     display: grid;
     align-items: center;
-    img {
-      width: 100%;
-    }
-    .text {
-      margin: 24px;
-      text-align: justify;
-      color: #0055d3;
-      font-size: 18px;
+    .col{
+      display: grid;
+      img {
+        align-self: center;
+        width: 100%;
+      }
     }
   }
 }
@@ -87,9 +84,68 @@
 .m-inline-24 {
   margin-inline: 24px;
 }
-
+@media only screen and (max-width: 860px) {
+  .info-right, .info-left{
+    .content{
+      width: 80%;
+      margin: 20px 0;
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .hashtag-box > .hashtag-sub{
     width: 100%;
+    font-size: 28px;
+  }
+  .hashtag-box > .hashtag{
+    font-size: 54px;
+  }
+  .heading{
+    font-size: 38px;
+  }
+  .sub-heading{
+    font-size: 18px;
+  }
+  .info-right, .info-left{
+    .content{
+      width: 90%;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .hashtag-box > .hashtag-sub{
+    font-size: 24px;
+  }
+  .hashtag-box > .hashtag{
+    font-size: 42px;
+  }
+  .info-left{
+    .content{
+      .col{
+        width: 50%;
+        padding: 0 0 0 12px;
+      }
+    }
+  }
+  .info-right{
+    .content{
+      .col{
+        width: 50%;
+        padding: 0 12px 0 0;
+      }
+    }
+  }
+  
+  .m-inline-24 {
+    margin-inline: 0;
+  }
+  .heading{
+    font-size: 32px;
+  }
+  .sub-heading{
+    font-size: 16px;
+    margin: 0;
   }
 }
