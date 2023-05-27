@@ -1,20 +1,21 @@
 <form>
   <div class="form-group">
-    <div class="input-group">
-      <input required="" type="text" name="text" autocomplete="off" class="input montserrat semi-bold">
-      <label class="user-label">Name</label>
-    </div>
-    <div class="input-group">
-      <input required="" type="text" name="text" autocomplete="off" class="input montserrat semi-bold">
-      <label class="user-label">Email</label>
-    </div>
-    <div class="input-group">
-      <input required="" type="text" name="text" autocomplete="off" class="input montserrat semi-bold">
-      <label class="user-label">Link to Work(Github)</label>
-    </div>
-    <div class="input-group">
-      <input required="" type="text" name="text" autocomplete="off" class="input montserrat semi-bold">
-      <label class="user-label">Message</label>
-    </div>
+    <label class="montserrat semi-bold" for="name">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
   </div>
+  <div class="form-group">
+    <label class="montserrat semi-bold" for="email address">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label class="montserrat semi-bold" for="link">Link to Work (Github)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Link">
+  </div>
+  <div class="form-group">
+    <label class="montserrat semi-bold" for="message">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button class="btn montserrat semi-bold">
+    Submit
+  </button>
 </form>
