@@ -1,16 +1,114 @@
-.header{
-  width:105%;
-  height:30%;
-  left:-3%;
-  position:absolute;
-  background-image: linear-gradient(#0055d3, #3787ff);
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
-  .header-text{
-    text-align: center;
+.page{
+  height: 68vh;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100vw;
+  height:250px;
+  overflow:hidden;
+  position:relative;
+}
+.rectangle{
+ width:100%;
+ height:250px;
+ background-color: #0055d3;
+ .logo-container{
+    cursor: pointer;
+    padding: 20px 0 0 28px;
+    // transition: all 0.15s;
+  .logo-text{
     color: white;
+    font-size: 28px;
+    margin: 0;
+   }
+ }
+}
+.egg {
+  width:100%;
+  height:366px;
+  border-radius:50%;
+  background-color:#fff;
+  position:absolute;
+  top:70px;
+  .heading-text{
+    margin-top: 80px;
     font-size: 36px;
+    color: #0055d3;
+    text-align: center;
+  }
+}
+.logo-container:hover{
+  opacity: 0.95;
+}
+
+.logo-container:active{
+  opacity: 0.80;
+}
+
+.page-content{
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: #0055d3;
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .wrapper {
+    height:200px;
+  }
+  .rectangle{
+    height:200px;
+    .logo-container{
+       padding: 16px 0 0 20px;
+     .logo-text{
+       color: white;
+       font-size: 24px;
+      }
+    }
+   }
+   .egg {
+    height:280px;
+    top:70px;
+    .heading-text{
+      margin-top: 80px;
+      font-size: 34px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    height:170px;
+  }
+  .rectangle{
+    height:170px;
+    .logo-container{
+       padding: 8px 0 0 8px;
+     .logo-text{
+       color: white;
+       font-size: 22px;
+      }
+    }
+   }
+   .egg {
+    height:230px;
+    top:72px;
+    .heading-text{
+      margin-top: 54px;
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+   .egg {
+    .heading-text{
+      margin-top: 54px;
+      font-size: 24px;
+    }
   }
 }
