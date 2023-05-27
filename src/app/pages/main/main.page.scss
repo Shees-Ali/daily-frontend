@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .bg-animation-blue {
-  position: absolute;
+  position: fixed;
   left: 5%;
   top: 10%;
   bottom: 0%;
@@ -14,7 +14,7 @@
 }
 
 .bg-animation-pink {
-  position: absolute;
+  position: fixed;
   left: 55%;
   top: 0%;
   bottom: -37.37%;

@@ -11,31 +11,7 @@
   transform: translateY(0);
 } 
 
-.bg-circle-blue {
-  position: absolute;
-  z-index: -1;
-  width: 400px;
-  height: 574px;
-  right: 0;
-  transform: translate( 10%,-50%);
-  background: linear-gradient(#117fb7 18.36%, rgba(36, 0, 255, 0) 76.36%);
-  filter: blur(125px);
-}
-
 .swiper-wrapper{
   height: 80vh;
   justify-content: space-around;
 }
-
-// .bg-circle-blue {
-//   animation: bg-circle-blue 8s linear infinite normal both;
-// }
-
-// @keyframes bg-circle-blue {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
