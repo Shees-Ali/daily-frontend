@@ -26,3 +26,31 @@
   filter: blur(125px);
   transform: rotate(-74.62deg);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #117fb7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e6885;
+}
+
+@media only screen and (max-width: 770px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

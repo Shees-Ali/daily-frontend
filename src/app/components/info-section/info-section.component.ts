@@ -13,7 +13,6 @@ export class InfoSectionComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const element = this.elementRef.nativeElement.querySelector('.info-left');
-    console.log(element);
     const elementPosition =
       element.getBoundingClientRect().top + element.clientHeight;
     const scrollPosition = window.innerHeight + window.pageYOffset;
