@@ -16,5 +16,7 @@ export class UpperFooterSectionComponent extends BasePage{
   getFeatured(){
       this.nav.navigateTo('/get-featured');
   }
-  getStarted() {}
+  getStarted() {
+    
+  }
 }

@@ -21,10 +21,7 @@ export class DescriptionSectionComponent {
   }
 
   checksize(){
-    if (this.screenWidth <= 960 && this.screenWidth >=600){
-      this.ismedium = true;
-    }
-    else if (this.screenWidth < 460){
+    if (this.screenWidth <= 960){
       this.ismedium = true;
     }
     else{

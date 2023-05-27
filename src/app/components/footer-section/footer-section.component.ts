@@ -14,4 +14,22 @@ export class FooterSectionComponent extends BasePage {
   goTo(path: string = '') {
     this.nav.navigateTo(path);
   }
+  tolinkedIn(){
+    window.open(
+      'https://www.linkedin.com/company/daily-frontend/',
+      '_blank' 
+    );
+  }
+  toDiscord(){
+    window.open(
+      'https://github.com/Shees-Ali/Cheat-Sheet-resources-for-DFE.git',
+      '_blank' 
+    );
+  }
+  toInstagram(){
+    window.open(
+      'https://www.instagram.com/dailyfrontend_/',
+      '_blank' 
+    );
+  }
 }
